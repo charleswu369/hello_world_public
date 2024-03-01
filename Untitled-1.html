@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Simple Webpage</h1>
+    <p id="greeting"></p>
+    <button onclick="changeGreeting()">Change Greeting</button>
+
+    <script>
+        document.getElementById('greeting').innerText = 'Hello, world!';
+
+        function changeGreeting() {
+            document.getElementById('greeting').innerText = 'Hello, user!';
+        }
+    </script>
+</body>
+</html>
